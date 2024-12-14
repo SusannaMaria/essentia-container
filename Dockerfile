@@ -5,6 +5,7 @@ RUN apk add --update --no-cache git g++ pkgconf musl-dev qtchooser qt5-qtbase-de
 # Build Gaia
 FROM buildbase AS gaia
 RUN apk add --update --no-cache swig
+RUN pip install setuptools
 # Gaia 2.4.6 + patches from master (python 3 support) from 2022
 ARG GAIA_VERSION=0d0942bf4748b40069977702715454ae084063c9
 RUN set -eux; \
@@ -30,6 +31,7 @@ RUN set -eux; \
 	cd /essentia-src; \
 	git checkout $ESSENTIA_VERSION
 WORKDIR /essentia-src
+RUN pip install setuptools
 RUN set -eux; \
 	./waf configure --build-static --with-gaia --with-examples; \
 	./waf; \

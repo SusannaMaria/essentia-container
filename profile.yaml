@@ -5,8 +5,11 @@ highlevel:
   svm_models:
   - /var/lib/essentia/svm-models/beta5/danceability.history
   - /var/lib/essentia/svm-models/beta5/gender.history
+  - /var/lib/essentia/svm-models/beta5/genre_dortmund.history
   - /var/lib/essentia/svm-models/beta5/genre_rosamerica.history
   - /var/lib/essentia/svm-models/beta5/genre_electronic.history
+  - /var/lib/essentia/svm-models/beta5/genre_tzanetakis.history
+  - /var/lib/essentia/svm-models/beta5/ismir04_rhythm.history
   - /var/lib/essentia/svm-models/beta5/mood_acoustic.history
   - /var/lib/essentia/svm-models/beta5/mood_aggressive.history
   - /var/lib/essentia/svm-models/beta5/mood_electronic.history
