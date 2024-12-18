@@ -1,5 +1,6 @@
+analysisSampleRate: 44100
 chromaprint:
-  compute: 0
+  compute: 1
 highlevel:
   compute: 1
   svm_models:
